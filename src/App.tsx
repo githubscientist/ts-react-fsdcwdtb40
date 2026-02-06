@@ -4,13 +4,11 @@
 // 2. class component
 
 // functional component: App
-function App() {
-  return (
-    <>
-      <h1>Hello World!</h1>
-      <p>Welcome to my Website!</p>
-    </>
-  )
+import { Component } from "react";
+class App extends Component {
+  render() {
+    return <h1>Hello World!</h1>;
+  }
 }
 
 export default App;
