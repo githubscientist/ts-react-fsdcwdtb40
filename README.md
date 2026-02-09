@@ -32,3 +32,9 @@ component:
 
 - It is the process of displaying the UI on the screen.
 - It is the process of inserting the React components into the DOM.
+
+### Props
+
+- It is short for "properties".
+- It is a way to pass data from a parent component to a child component.
+- It is read-only, meaning that a child component cannot modify the props it receives from its parent component.
