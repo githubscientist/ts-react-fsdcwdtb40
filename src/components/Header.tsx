@@ -1,13 +1,14 @@
 type Props = {
-  name: string,
-  age: number
+  message: string,
 }
 
-const Header = ({ name, age }: Props) => {
+const Header = ({ message }: Props) => {
+
+  console.log('Parent:', message);  
 
   return (
     <>
-      <h1>Hello {name.slice(0, 1).toUpperCase() + name.slice(1,)}! You're { age} years old</h1>
+      <h1>Hello, World!</h1>
     </>
   )
 }
