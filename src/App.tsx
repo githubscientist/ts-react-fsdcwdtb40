@@ -1,12 +1,13 @@
 type Props = {
-  name: string;
+  name: string,
+  age: number
 }
 
-const Header = ({ name }: Props) => {
+const Header = ({ name, age }: Props) => {
 
   return (
     <>
-      <h1>Hello { name.slice(0, 1).toUpperCase() + name.slice(1, ) }!</h1>
+      <h1>Hello {name.slice(0, 1).toUpperCase() + name.slice(1,)}! You're { age} years old</h1>
     </>
   )
 }
@@ -14,10 +15,11 @@ const Header = ({ name }: Props) => {
 
 const App = () => {
   let name: string = 'sathish';
+  let age: number = 35;
 
   return (
     <>
-      <Header name={name} />
+      <Header name={name} age={age} />
     </>
   )
 }
