@@ -1,14 +1,14 @@
-import Header from "./components/Header";
+import ParentComponent from "./components/ParentComponent";
 
 const App = () => {
-  
-  const getDataFromChild = (message: string): void => {
-    console.log('Child:', message);
-  }
+
+  const name: string = 'Krish';
 
   return (
     <>
-      <Header getDataFromChild={getDataFromChild} />
+      <ParentComponent
+        name={name}
+      />
     </>
   )
 }
