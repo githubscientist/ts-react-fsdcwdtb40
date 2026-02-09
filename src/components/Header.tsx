@@ -1,10 +1,12 @@
 type Props = {
-  message: string,
+  getDataFromChild: (message: string) => void,
 }
 
-const Header = ({ message }: Props) => {
+const Header = ({ getDataFromChild }: Props) => {
 
-  console.log('Parent:', message);  
+    let message: string = 'hi, how are you?'; 
+    
+    getDataFromChild(message);
 
   return (
     <>
