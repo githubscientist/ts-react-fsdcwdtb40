@@ -28,15 +28,7 @@ component:
    - TypeScript XML - TypeScript + HTML
    - It allows developers to write HTML-like syntax in their JavaScript code, making it easier.
 
-<h1></h1>
-<p></p>
+### Render
 
-custom html tag:
-
-component
-
-Header
-
-<Header>
-    
-</Header>
+- It is the process of displaying the UI on the screen.
+- It is the process of inserting the React components into the DOM.
