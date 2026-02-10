@@ -1,14 +1,13 @@
-import ParentComponent from "./components/ParentComponent";
+import { useState } from "react";
 
 const App = () => {
-
-  const name: string = 'Krish';
+  const [likes, setLikes] = useState<number>(0);
+  const [dislikes, setDislikes] = useState<number>(0);
 
   return (
     <>
-      <ParentComponent
-        name={name}
-      />
+      <button onClick={() => setLikes(likes + 1)}>Like</button> &nbsp; { likes } &nbsp; likes &nbsp;
+      <button onClick={() => setDislikes(dislikes + 1)}>Dislike</button> &nbsp; { dislikes } &nbsp; dislikes &nbsp;
     </>
   )
 }
