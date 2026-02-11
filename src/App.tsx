@@ -39,8 +39,8 @@ const App = () => {
 
   return (
     <>
-      <button onClick={handleLike}>Like</button> &nbsp; { data.likes } &nbsp; likes &nbsp;
-      <button onClick={handleDislike}>Dislike</button> &nbsp; { data.dislikes } &nbsp; dislikes &nbsp;
+      <button onClick={handleLike}>Upvote</button> &nbsp; { data.likes } &nbsp; likes &nbsp;
+      <button onClick={handleDislike}>Downvote</button> &nbsp; { data.dislikes } &nbsp; dislikes &nbsp;
     </>
   )
 }
